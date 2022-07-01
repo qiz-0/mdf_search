@@ -28,7 +28,7 @@ if(isset($_REQUEST["term"])){
                 //获取结果行作为关联数组
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
                     echo "<div>" . $row["col"] . "<div  class='result_div'>" . 
-					"端口:" . $row["port"] . "&nbsp/&nbsp模块:" . $row["type"] ."</div>" .$row["port"] .
+					"端口:" . $row["port"] . "&nbsp/&nbsp模块:" . $row["type"] ."</div>" .
 					"</div>" ;
                 }
             } else{
