@@ -27,8 +27,8 @@ if(isset($_REQUEST["term"])){
             if(mysqli_num_rows($result) > 0){
                 //获取结果行作为关联数组
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                    echo "<div>" . $row["col"] . "<div  class='result_div'>" . 
-					"端口:" . $row["port"] . "&nbsp/&nbsp模块:" . $row["type"] ."</div>" .
+                    echo "<div class='result_col'>" . $row["col"] . "<div class='result_info'>" . 
+					"[端口:" . $row["port"] . "&nbsp/&nbsp模块:" . $row["type"] ."]</div>" .
 					"</div>" ;
                 }
             } else{
