@@ -1,7 +1,7 @@
 <?php
 /* 尝试MySQL服务器连接。 假设您正在运行MySQL
 具有默认设置的服务器（用户“ root”，密码） */
-$link = mysqli_connect("10.0.0.110", "smg", "bt6f7m3XIEXL)XyIWZ", "smg_xlsx");
+$link = mysqli_connect("10.0.0.110", "root", "123456", "smg_xlsx");
  
 //检查连接
 if($link === false){
